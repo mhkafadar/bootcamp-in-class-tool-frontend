@@ -1,17 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>React App</title>
+    <!-- Add fontawesome icons  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+    <!-- starting of the navbar  -->
+    <nav>
+            <div class="nav-container">
+                <div class="left">
+                    <!-- <span class="brand">Students:</span>   -->
+                    <ul>
+                        <li>Active (<span id="active-no">20</span>) </li>
+                        <li>Absent (<span id="absent-no">3</span>) </li>
+                        <li>Finished (<span id="finished-no">16</span>) </li>
+                        <li>Stucked (<span id="stucked-no">0</span>) </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <button id="reset">Reset <i class="fas fa-redo"></i></button>
+                </div>
+            </div>
+    </nav>
+    <!-- end of the navbar  -->
     <div class="container">
         <header class="content">
-            
+             <!-- end of the  main table to check students status -->
+            <table class="status-main-table" border='1'>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="pending">Pending <i class="fa fa-spinner fa-pulse"></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="absent-user">john Smith</td>
+                        <td class="not-connected">N / C &nbsp;&nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="pending">Pending <i class="fa fa-spinner fa-pulse"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="absent-user">john Smith</td>
+                        <td class="not-connected">N / C &nbsp;&nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="finished">finsihed <i class="far fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="absent-user">john Smith</td>
+                        <td class="not-connected">N / C &nbsp;&nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td class="absent-user">john Smith</td>
+                        <td class="not-connected">N / C &nbsp;&nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="finished">finsihed <i class="far fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="absent-user">john Smith</td>
+                        <td class="not-connected">N / C &nbsp;&nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="lost">I'm lost <i class="far fa-times-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="lost">I'm lost <i class="far fa-times-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="lost">I'm lost <i class="far fa-times-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="finished">finsihed <i class="far fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="lost">I'm lost <i class="far fa-times-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="finished">finsihed <i class="far fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="lost">I'm lost <i class="far fa-times-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="pending">Pending <i class="fa fa-spinner fa-pulse"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="finished">finsihed <i class="far fa-check-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="active-user">john Smith</td>
+                        <td class="lost">I'm lost <i class="far fa-times-circle"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- end of the  main table to check students status -->
         </header>
     </div>
 </body>
+
 </html>
