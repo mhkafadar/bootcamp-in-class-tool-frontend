@@ -44,7 +44,7 @@ nav .left ul{
 }
 nav .left ul li{
   border-right: 1px solid #fff;
-  padding: 0 30px;
+  padding: 0 35px;
   font-size: calc(8px + 2vmin);
 }
 nav .left ul li:last-of-type{
@@ -52,8 +52,8 @@ nav .left ul li:last-of-type{
 }
 nav .left ul li:hover{
   cursor: pointer;
-  --transform: scale(1.4);
-  transform: rotate(370deg);
+  transform: scale(1.2);
+  --transform: rotate(370deg);
   transition: all 0.3s ease-in-out;
 }
 
