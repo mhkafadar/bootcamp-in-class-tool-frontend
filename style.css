@@ -27,10 +27,18 @@ code {
   color: white;
 }
 /* Start styling main table LK */
+
 table.status-main-table{
 border-collapse: collapse;
 width: 60%;
-text-align: center;
+text-align: left;
+}
+
+table.status-main-table th{
+  background: #570074;
+}
+table.status-main-table th,table.status-main-table td{
+  padding: 15px 25px;
 }
 table.status-main-table .finished{
   background-color: #00875b;
@@ -42,4 +50,23 @@ table.status-main-table .pending{
   background-color: #7d7d7d;
 }
 
+/* table.status-main-table tr td.active-user::before{
+  
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007   ";
+  
+}*/
+table.status-main-table tr td.absent-user{
+  text-decoration: line-through;
+  color: #717171;
+} 
+table.status-main-table tr .not-connected::after{
+  
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #f8f8f8;
+  content: "   \f235   ";
+
+}
 /* End styling main table LK */
