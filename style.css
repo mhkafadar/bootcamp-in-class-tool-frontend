@@ -26,4 +26,20 @@ code {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+/* Start styling main table LK */
+table.status-main-table{
+border-collapse: collapse;
+width: 60%;
+text-align: center;
+}
+table.status-main-table .finished{
+  background-color: #00875b;
+}
+table.status-main-table .lost{
+  background-color: #dc021d;
+}
+table.status-main-table .pending{
+  background-color: #7d7d7d;
+}
 
+/* End styling main table LK */
