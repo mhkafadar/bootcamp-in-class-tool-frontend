@@ -11,6 +11,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* Start styling the navbar  */
+nav{
+  min-height: 70px;
+  background-color: #570074;
+  color: #fff;
+  overflow-y:hidden;
+}
+nav.success{
+  background-color: #00875b;
+}
+nav.fail{
+  background-color: red;
+}
+nav .nav-container{
+  width: 1070px;
+  margin: 0 auto;
+  display: flex;
+  line-height: 70px;
+}
+nav .left{
+  display: flex;
+  width: 80%;
+
+}
+nav .left ul{
+  list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+nav .left ul li{
+  border-right: 1px solid #fff;
+  padding: 0 30px;
+  font-size: calc(8px + 2vmin);
+}
+nav .left ul li:last-of-type{
+  border-right: none;
+}
+nav .left ul li:hover{
+  cursor: pointer;
+  --transform: scale(1.4);
+  transform: rotate(370deg);
+  transition: all 0.3s ease-in-out;
+}
+
+nav .right{
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+nav .right button{
+  background-color: transparent;
+color: #fff;
+padding: 0 30px;
+outline: none;
+font-size: calc(8px + 2vmin);
+}
+nav .right button:hover{
+  cursor: pointer;
+  transform: rotate(-10deg);
+  transition: all 0.3sec ease-in-out;
+}
+/* End styling the navbar  */
 
 .container {
   text-align: center;
@@ -23,15 +87,16 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(6px + 2vmin);
   color: white;
 }
 /* Start styling main table LK */
 
 table.status-main-table{
 border-collapse: collapse;
-width: 60%;
+width: 1070px;
 text-align: left;
+margin-top: 50px;
 }
 
 table.status-main-table th{
